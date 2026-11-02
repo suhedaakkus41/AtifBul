@@ -1,0 +1,217 @@
+[
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Machine Learning-Based Prediction of Dye-Sensitized Solar Cell Efficiency for Manufacturing Process Optimization",
+    "atif_yapan_eser_id": "https://openalex.org/W4414410802",
+    "atif_yapan_doi": "https://doi.org/10.3390/en18185011",
+    "atif_yapan_yazarlar": [
+      "Zoltán Varga",
+      "Marek Bobček",
+      "Zsolt Čonka",
+      "Ervin Rácz"
+    ],
+    "atif_yili": 2025,
+    "durum": "incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": true,
+      "durum": "dogrulandi",
+      "yontem": "doi",
+      "puan": 100,
+      "gerekce": "İki kaydın DOI değeri aynı."
+    },
+    "gerekce": "OpenAlex cites ilişkisi bulundu; kaynakçadan bağımsız doğrulama yapılmadı."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Leakage-Safe Precision-Aware Dual-Branch FT-Transformer for Population-Scale Heart Disease Risk Prediction",
+    "atif_yapan_eser_id": "https://openalex.org/W7162698061",
+    "atif_yapan_doi": "https://doi.org/10.3390/s26113417",
+    "atif_yapan_yazarlar": [
+      "Jahidul Islam",
+      "Dristi Datta",
+      "Fowzia Akhter"
+    ],
+    "atif_yili": 2026,
+    "durum": "incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": true,
+      "durum": "dogrulandi",
+      "yontem": "doi",
+      "puan": 100,
+      "gerekce": "İki kaydın DOI değeri aynı."
+    },
+    "gerekce": "OpenAlex cites ilişkisi bulundu; kaynakçadan bağımsız doğrulama yapılmadı."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Convolutional Neural Network and Human Age Detection : A Pilot Study",
+    "atif_yapan_eser_id": "https://openalex.org/W7128951582",
+    "atif_yapan_doi": "https://doi.org/10.32628/cseit2612134",
+    "atif_yapan_yazarlar": [
+      "Jacob A. Ogar",
+      "M. M. Liman",
+      "C. A. Barka"
+    ],
+    "atif_yili": 2026,
+    "durum": "incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": true,
+      "durum": "dogrulandi",
+      "yontem": "doi",
+      "puan": 100,
+      "gerekce": "İki kaydın DOI değeri aynı."
+    },
+    "gerekce": "OpenAlex cites ilişkisi bulundu; kaynakçadan bağımsız doğrulama yapılmadı."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "IoT-Driven Deep Learning Logic to Identify Cardiovascular Diseases using Electrocardiogram Images",
+    "atif_yapan_eser_id": "https://openalex.org/W7135210559",
+    "atif_yapan_doi": "https://doi.org/10.1109/icaect68478.2026.11425035",
+    "atif_yapan_yazarlar": [
+      "J. Gokulapriya",
+      "P. Logeswari",
+      "Thiyagarajan Jayaraman",
+      "R. Rajesh",
+      "Senthil Kumar Sengottaiyan",
+      "Yuvaraja Thangavel"
+    ],
+    "atif_yili": 2026,
+    "durum": "incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": true,
+      "durum": "dogrulandi",
+      "yontem": "doi",
+      "puan": 100,
+      "gerekce": "İki kaydın DOI değeri aynı."
+    },
+    "gerekce": "OpenAlex cites ilişkisi bulundu; kaynakçadan bağımsız doğrulama yapılmadı."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Prediction of Cardiovascular Risk Using Machine Learning Based on Maximal Oxygen Consumption , Physical Fitness, and Anthropometry",
+    "atif_yapan_eser_id": "https://openalex.org/W7160936230",
+    "atif_yapan_doi": "https://doi.org/10.1111/cob.70081",
+    "atif_yapan_yazarlar": [
+      "Rodrigo Yáñez-Sepúlveda",
+      "Rodrigo Olivares",
+      "Eduardo Guzmán-Muñoz",
+      "Yeny Concha‐Cisternas",
+      "Josivaldo de Souza-Lima",
+      "Exal García-Carrillo",
+      "Jacqueline Páez‐Herrera",
+      "Daniel Rojas‐Valverde",
+      "Guillermo Cortés-Roco",
+      "Vicente Javier Clemente‐Suárez",
+      "José Francisco López-Gil"
+    ],
+    "atif_yili": 2026,
+    "durum": "incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": true,
+      "durum": "dogrulandi",
+      "yontem": "doi",
+      "puan": 100,
+      "gerekce": "İki kaydın DOI değeri aynı."
+    },
+    "gerekce": "OpenAlex cites ilişkisi bulundu; kaynakçadan bağımsız doğrulama yapılmadı."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Edge-Assisted Federated Ensemble Learning with Adaptive Sample Reweighting for Robust Intrusion Detection in IoT-Enabled Smart Networks",
+    "atif_yapan_eser_id": "https://openalex.org/W7171568641",
+    "atif_yapan_doi": "https://doi.org/10.1109/conit69683.2026.11620792",
+    "atif_yapan_yazarlar": [
+      "Kamal Saluja",
+      "Sunil Gupta",
+      "Chander Prabha",
+      "Tanya Khaneja",
+      "Shilpa Hudnurkar",
+      "Mohammad Zubair Khan"
+    ],
+    "atif_yili": 2026,
+    "durum": "incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": true,
+      "durum": "dogrulandi",
+      "yontem": "doi",
+      "puan": 100,
+      "gerekce": "İki kaydın DOI değeri aynı."
+    },
+    "gerekce": "OpenAlex cites ilişkisi bulundu; kaynakçadan bağımsız doğrulama yapılmadı."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Multi-Dataset Heart Disease Prediction Using a Hybrid BiLSTM-GRU Network",
+    "atif_yapan_eser_id": "https://openalex.org/W7204161704",
+    "atif_yapan_doi": "https://doi.org/10.1109/evst69093.2026.11660543",
+    "atif_yapan_yazarlar": [
+      "Pradeep Kumar Kushwaha",
+      "Dr. Arvind Dagur",
+      "Dheerendra Kumar Shukla"
+    ],
+    "atif_yili": 2026,
+    "durum": "incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": true,
+      "durum": "dogrulandi",
+      "yontem": "doi",
+      "puan": 100,
+      "gerekce": "İki kaydın DOI değeri aynı."
+    },
+    "gerekce": "OpenAlex cites ilişkisi bulundu; kaynakçadan bağımsız doğrulama yapılmadı."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "FedAvg for Privacy in The UCI Heart Disease Dataset with Analyzing Communication-Computation Trade-offs",
+    "atif_yapan_eser_id": "https://openalex.org/W7204582689",
+    "atif_yapan_doi": "https://doi.org/10.1109/icoict71118.2026.11664806",
+    "atif_yapan_yazarlar": [
+      "Eldwin Fikhar Ananda",
+      "Aji Gautama Putrada",
+      "Ayu Qatrunnada Istiqfarri"
+    ],
+    "atif_yili": 2026,
+    "durum": "incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": true,
+      "durum": "dogrulandi",
+      "yontem": "doi",
+      "puan": 100,
+      "gerekce": "İki kaydın DOI değeri aynı."
+    },
+    "gerekce": "OpenAlex cites ilişkisi bulundu; kaynakçadan bağımsız doğrulama yapılmadı."
+  }
+]
