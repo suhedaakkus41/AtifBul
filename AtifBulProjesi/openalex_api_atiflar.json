@@ -1,0 +1,121 @@
+[
+    {
+        "atif_yapan_eser": "Machine Learning-Based Prediction of Dye-Sensitized Solar Cell Efficiency for Manufacturing Process Optimization",
+        "yazarlar": [
+            "Zoltán Varga",
+            "Marek Bobček",
+            "Zsolt Čonka",
+            "Ervin Rácz"
+        ],
+        "yil": 2025,
+        "doi": "https://doi.org/10.3390/en18185011",
+        "openalex_id": "https://openalex.org/W4414410802",
+        "atif_yapilan_yayin_id": "https://openalex.org/W4412693716",
+        "durum": "İncelenmeli"
+    },
+    {
+        "atif_yapan_eser": "Leakage-Safe Precision-Aware Dual-Branch FT-Transformer for Population-Scale Heart Disease Risk Prediction",
+        "yazarlar": [
+            "Jahidul Islam",
+            "Dristi Datta",
+            "Fowzia Akhter"
+        ],
+        "yil": 2026,
+        "doi": "https://doi.org/10.3390/s26113417",
+        "openalex_id": "https://openalex.org/W7162698061",
+        "atif_yapilan_yayin_id": "https://openalex.org/W4412693716",
+        "durum": "İncelenmeli"
+    },
+    {
+        "atif_yapan_eser": "Convolutional Neural Network and Human Age Detection : A Pilot Study",
+        "yazarlar": [
+            "Jacob A. Ogar",
+            "M. M. Liman",
+            "C. A. Barka"
+        ],
+        "yil": 2026,
+        "doi": "https://doi.org/10.32628/cseit2612134",
+        "openalex_id": "https://openalex.org/W7128951582",
+        "atif_yapilan_yayin_id": "https://openalex.org/W4412693716",
+        "durum": "İncelenmeli"
+    },
+    {
+        "atif_yapan_eser": "IoT-Driven Deep Learning Logic to Identify Cardiovascular Diseases using Electrocardiogram Images",
+        "yazarlar": [
+            "J. Gokulapriya",
+            "P. Logeswari",
+            "Thiyagarajan Jayaraman",
+            "R. Rajesh",
+            "Senthil Kumar Sengottaiyan",
+            "Yuvaraja Thangavel"
+        ],
+        "yil": 2026,
+        "doi": "https://doi.org/10.1109/icaect68478.2026.11425035",
+        "openalex_id": "https://openalex.org/W7135210559",
+        "atif_yapilan_yayin_id": "https://openalex.org/W4412693716",
+        "durum": "İncelenmeli"
+    },
+    {
+        "atif_yapan_eser": "Prediction of Cardiovascular Risk Using Machine Learning Based on Maximal Oxygen Consumption , Physical Fitness, and Anthropometry",
+        "yazarlar": [
+            "Rodrigo Yáñez-Sepúlveda",
+            "Rodrigo Olivares",
+            "Eduardo Guzmán-Muñoz",
+            "Yeny Concha‐Cisternas",
+            "Josivaldo de Souza-Lima",
+            "Exal García-Carrillo",
+            "Jacqueline Páez‐Herrera",
+            "Daniel Rojas‐Valverde",
+            "Guillermo Cortés-Roco",
+            "Vicente Javier Clemente‐Suárez",
+            "José Francisco López-Gil"
+        ],
+        "yil": 2026,
+        "doi": "https://doi.org/10.1111/cob.70081",
+        "openalex_id": "https://openalex.org/W7160936230",
+        "atif_yapilan_yayin_id": "https://openalex.org/W4412693716",
+        "durum": "İncelenmeli"
+    },
+    {
+        "atif_yapan_eser": "Edge-Assisted Federated Ensemble Learning with Adaptive Sample Reweighting for Robust Intrusion Detection in IoT-Enabled Smart Networks",
+        "yazarlar": [
+            "Kamal Saluja",
+            "Sunil Gupta",
+            "Chander Prabha",
+            "Tanya Khaneja",
+            "Shilpa Hudnurkar",
+            "Mohammad Zubair Khan"
+        ],
+        "yil": 2026,
+        "doi": "https://doi.org/10.1109/conit69683.2026.11620792",
+        "openalex_id": "https://openalex.org/W7171568641",
+        "atif_yapilan_yayin_id": "https://openalex.org/W4412693716",
+        "durum": "İncelenmeli"
+    },
+    {
+        "atif_yapan_eser": "Multi-Dataset Heart Disease Prediction Using a Hybrid BiLSTM-GRU Network",
+        "yazarlar": [
+            "Pradeep Kumar Kushwaha",
+            "Dr. Arvind Dagur",
+            "Dheerendra Kumar Shukla"
+        ],
+        "yil": 2026,
+        "doi": "https://doi.org/10.1109/evst69093.2026.11660543",
+        "openalex_id": "https://openalex.org/W7204161704",
+        "atif_yapilan_yayin_id": "https://openalex.org/W4412693716",
+        "durum": "İncelenmeli"
+    },
+    {
+        "atif_yapan_eser": "FedAvg for Privacy in The UCI Heart Disease Dataset with Analyzing Communication-Computation Trade-offs",
+        "yazarlar": [
+            "Eldwin Fikhar Ananda",
+            "Aji Gautama Putrada",
+            "Ayu Qatrunnada Istiqfarri"
+        ],
+        "yil": 2026,
+        "doi": "https://doi.org/10.1109/icoict71118.2026.11664806",
+        "openalex_id": "https://openalex.org/W7204582689",
+        "atif_yapilan_yayin_id": "https://openalex.org/W4412693716",
+        "durum": "İncelenmeli"
+    }
+]

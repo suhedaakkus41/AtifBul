@@ -1,0 +1,502 @@
+[
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Machine Learning-Based Prediction of Dye-Sensitized Solar Cell Efficiency for Manufacturing Process Optimization",
+    "atif_yapan_eser_id": "https://openalex.org/W4414410802",
+    "atif_yapan_doi": "https://doi.org/10.3390/en18185011",
+    "atif_yili": 2025,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Leakage-Safe Precision-Aware Dual-Branch FT-Transformer for Population-Scale Heart Disease Risk Prediction",
+    "atif_yapan_eser_id": "https://openalex.org/W7162698061",
+    "atif_yapan_doi": "https://doi.org/10.3390/s26113417",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Convolutional Neural Network and Human Age Detection : A Pilot Study",
+    "atif_yapan_eser_id": "https://openalex.org/W7128951582",
+    "atif_yapan_doi": "https://doi.org/10.32628/cseit2612134",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "IoT-Driven Deep Learning Logic to Identify Cardiovascular Diseases using Electrocardiogram Images",
+    "atif_yapan_eser_id": "https://openalex.org/W7135210559",
+    "atif_yapan_doi": "https://doi.org/10.1109/icaect68478.2026.11425035",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Prediction of Cardiovascular Risk Using Machine Learning Based on Maximal Oxygen Consumption , Physical Fitness, and Anthropometry",
+    "atif_yapan_eser_id": "https://openalex.org/W7160936230",
+    "atif_yapan_doi": "https://doi.org/10.1111/cob.70081",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Edge-Assisted Federated Ensemble Learning with Adaptive Sample Reweighting for Robust Intrusion Detection in IoT-Enabled Smart Networks",
+    "atif_yapan_eser_id": "https://openalex.org/W7171568641",
+    "atif_yapan_doi": "https://doi.org/10.1109/conit69683.2026.11620792",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Multi-Dataset Heart Disease Prediction Using a Hybrid BiLSTM-GRU Network",
+    "atif_yapan_eser_id": "https://openalex.org/W7204161704",
+    "atif_yapan_doi": "https://doi.org/10.1109/evst69093.2026.11660543",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4412693716",
+    "hedef_yayin": "Leveraging Machine Learning Techniques to Predict Cardiovascular Heart Disease",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "FedAvg for Privacy in The UCI Heart Disease Dataset with Analyzing Communication-Computation Trade-offs",
+    "atif_yapan_eser_id": "https://openalex.org/W7204582689",
+    "atif_yapan_doi": "https://doi.org/10.1109/icoict71118.2026.11664806",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4381615694",
+    "hedef_yayin": "KÜÇÜK VE ORTA ÖLÇEKLİ ÜRETİM İŞLETMELERİ İÇİN TEDARİKÇİ SEÇİM PROBLEMİNİN NÖTROSOFİK AHP, TOPSIS VE VIKOR YÖNTEMİYLE DEĞERLENDİRİLMESİ",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Supplier Selection and Seller Prioritization in E-Commerce Platforms: A Systematic Review of Multi-Criteria and Hybrid Decision-Making Approaches",
+    "atif_yapan_eser_id": "https://openalex.org/W7143300767",
+    "atif_yapan_doi": "https://doi.org/10.3390/jtaer21040107",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4381615694",
+    "hedef_yayin": "KÜÇÜK VE ORTA ÖLÇEKLİ ÜRETİM İŞLETMELERİ İÇİN TEDARİKÇİ SEÇİM PROBLEMİNİN NÖTROSOFİK AHP, TOPSIS VE VIKOR YÖNTEMİYLE DEĞERLENDİRİLMESİ",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "GIDA SEKTÖRÜNDE CATERING ENDÜSTRİSİ İÇİN ATIK YÖNETİMİNİN SÜRDÜRÜLEBİLİR OLMASINI ETKİLEYEN FAKTÖRLERİN AAS ve AHS YÖNTEMLERİ İLE DEĞERLENDİRİLMESİ",
+    "atif_yapan_eser_id": "https://openalex.org/W4413282663",
+    "atif_yapan_doi": "https://doi.org/10.17482/uumfd.1564378",
+    "atif_yili": 2025,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4381615694",
+    "hedef_yayin": "KÜÇÜK VE ORTA ÖLÇEKLİ ÜRETİM İŞLETMELERİ İÇİN TEDARİKÇİ SEÇİM PROBLEMİNİN NÖTROSOFİK AHP, TOPSIS VE VIKOR YÖNTEMİYLE DEĞERLENDİRİLMESİ",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Turizm Sektöründe Sürdürülebilir Kalkınma Amaçları Doğrultusunda Yeşil Tedarikçi Seçimi",
+    "atif_yapan_eser_id": "https://openalex.org/W7141049616",
+    "atif_yapan_doi": "https://doi.org/10.32572/guntad.1730554",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W1492532977",
+    "hedef_yayin": "The Effect of Informal Economy on the European Debt Crisis",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": false,
+    "atif_yapan_eser": "Financial Development and Shadow Economy: A Bibliometric Analysis Using the Scopus Database (1985–2021)",
+    "atif_yapan_eser_id": "https://openalex.org/W4214579970",
+    "atif_yapan_doi": "https://doi.org/10.1007/s13132-022-00980-5",
+    "atif_yili": 2022,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W1492532977",
+    "hedef_yayin": "The Effect of Informal Economy on the European Debt Crisis",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": false,
+    "atif_yapan_eser": "Advance Dynamic Panel Second-Generation Two-Step System Generalized Method of Movement Modeling: Applications in Economic Stability-Shadow Economy Nexus with a Special Case of Kingdom of Saudi Arabia",
+    "atif_yapan_eser_id": "https://openalex.org/W4313260686",
+    "atif_yapan_doi": "https://doi.org/10.3390/math11010085",
+    "atif_yili": 2022,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W1492532977",
+    "hedef_yayin": "The Effect of Informal Economy on the European Debt Crisis",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": false,
+    "atif_yapan_eser": "Economic crisis and “white informal economy” – a slippery slope",
+    "atif_yapan_eser_id": "https://openalex.org/W2752579897",
+    "atif_yapan_doi": "https://doi.org/10.1108/ijssp-06-2016-0078",
+    "atif_yili": 2017,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W1492532977",
+    "hedef_yayin": "The Effect of Informal Economy on the European Debt Crisis",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": false,
+    "atif_yapan_eser": "Determinants of Short-term Fiscal Imbalance: the Role of Tax Evasion as Fiscal Determinant Within European Countries",
+    "atif_yapan_eser_id": "https://openalex.org/W2942539665",
+    "atif_yapan_doi": "https://doi.org/10.11118/actaun201967020515",
+    "atif_yili": 2019,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W1492532977",
+    "hedef_yayin": "The Effect of Informal Economy on the European Debt Crisis",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": false,
+    "atif_yapan_eser": "THE EFFECT OF SELECTED MACROECONOMIC INDICATORS ON THE INFORMAL ECONOMY: THE CASE OF THE BALKAN COUNTRIES AND TURKEY",
+    "atif_yapan_eser_id": "https://openalex.org/W4319163733",
+    "atif_yapan_doi": "https://doi.org/10.18092/ulikidince.1136586",
+    "atif_yili": 2023,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W1492532977",
+    "hedef_yayin": "The Effect of Informal Economy on the European Debt Crisis",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": false,
+    "atif_yapan_eser": "Short-term fiscal imbalance comparison in V4 countries using a dynamic conditional correlation approach",
+    "atif_yapan_eser_id": "https://openalex.org/W2737947774",
+    "atif_yapan_doi": "https://doi.org/10.24136/eq.v12i2.14",
+    "atif_yili": 2017,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4387879548",
+    "hedef_yayin": "Dijital Dönüşümde Güncel Yaklaşımlar: Türkiye ve Dünya Örnekleri",
+    "hedef_yayin_turu": "book-chapter",
+    "dergi_makalesi": false,
+    "atif_yapan_eser": "Technological Integration in Sustainable Tourism Policies: The Role of Public Digitalization and Management Information Systems",
+    "atif_yapan_eser_id": "https://openalex.org/W7160068525",
+    "atif_yapan_doi": "https://doi.org/10.1007/978-3-032-15590-0_10",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4387879548",
+    "hedef_yayin": "Dijital Dönüşümde Güncel Yaklaşımlar: Türkiye ve Dünya Örnekleri",
+    "hedef_yayin_turu": "book-chapter",
+    "dergi_makalesi": false,
+    "atif_yapan_eser": "Cumhuriyet’ten Günümüze Türkiye’nin Dış Ticaret Tarihi (1923-2023) (Politik ve Ekonomik Gelişmelerle)",
+    "atif_yapan_eser_id": "https://openalex.org/W4408155789",
+    "atif_yapan_doi": "https://doi.org/10.37609/akya.3583",
+    "atif_yili": 2025,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4387879548",
+    "hedef_yayin": "Dijital Dönüşümde Güncel Yaklaşımlar: Türkiye ve Dünya Örnekleri",
+    "hedef_yayin_turu": "book-chapter",
+    "dergi_makalesi": false,
+    "atif_yapan_eser": "Yapay Zekâ İle Havalimanlarının Dönüşümü: Singapur Changi Havalimanı",
+    "atif_yapan_eser_id": "https://openalex.org/W7117542194",
+    "atif_yapan_doi": "https://doi.org/10.58830/ozgur.pub1142.c4708",
+    "atif_yili": 2025,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W3180277354",
+    "hedef_yayin": "GLOBAL ALTIN ARZ-TALEBİ VE ALTIN PİYASALARI ÜZERİNE BİR DEĞERLENDİRME",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "TÜRKİYE’DE KONUT SATIŞLARINI ETKİLEYEN FAKTÖRLERİN YERLİ VE YABANCILAR AÇISINDAN İNCELENMESİ",
+    "atif_yapan_eser_id": "https://openalex.org/W4400088759",
+    "atif_yapan_doi": "https://doi.org/10.53443/anadoluibfd.1360449",
+    "atif_yili": 2024,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W3180277354",
+    "hedef_yayin": "GLOBAL ALTIN ARZ-TALEBİ VE ALTIN PİYASALARI ÜZERİNE BİR DEĞERLENDİRME",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Altın Bankacılığında Bölgesel Performans Farklılıkları: Türkiye’de Yerli Özel Bankalar Üzerine VIKOR Tabanlı Bir Analiz",
+    "atif_yapan_eser_id": "https://openalex.org/W7141664308",
+    "atif_yapan_doi": "https://doi.org/10.53306/klujfeas.1853866",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4387678959",
+    "hedef_yayin": "SOSYAL AĞLARDA INFLEUNCER MARKETING İLE DOĞRU VE ETKİLİ REKLAM: ELYXION BUTİK ÖRNEĞİ",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "GOOGLE ANALYTİCS KULLANICI DAVRANIŞI VERİLERİNİN ANALİZİ: AVUKATLIK WEB SİTESİ ÖRNEĞİ",
+    "atif_yapan_eser_id": "https://openalex.org/W7140627468",
+    "atif_yapan_doi": "https://doi.org/10.17130/ijmeb.1688655",
+    "atif_yili": 2026,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4401107803",
+    "hedef_yayin": "QR KOD İLE BİR SİBER GÜVENLİK FARKINDALIK DENEMESİ: DÜZCE ÖRNEĞİ",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Hedonik ve faydacı değerin QR kod kullanım niyetine etkisi: algılanan riskin düzenleyici rolü",
+    "atif_yapan_eser_id": "https://openalex.org/W7117690977",
+    "atif_yapan_doi": "https://doi.org/10.18070/erciyesiibd.1687053",
+    "atif_yili": 2025,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  },
+  {
+    "hedef_yayin_id": "https://openalex.org/W4312936412",
+    "hedef_yayin": "TÜRKİYE’DE ISO 27001 BİLGİ GÜVENLİĞİ YÖNETİM SİSTEMİ SERTİFİKASINA SAHİP ÇEŞİTLİ KURULUŞLARIN BGYS YAKLAŞIMLARI ÜZERİNE BİR İNCELEME",
+    "hedef_yayin_turu": "article",
+    "dergi_makalesi": true,
+    "atif_yapan_eser": "Dijital Dönüşümde Güncel Yaklaşımlar: Türkiye ve Dünya Örnekleri",
+    "atif_yapan_eser_id": "https://openalex.org/W4387879548",
+    "atif_yapan_doi": "https://doi.org/10.58830/ozgur.pub137.c1388",
+    "atif_yili": 2023,
+    "durum": "openalex_iliskisi_incelenmeli",
+    "dogrulanmis_atif": false,
+    "baslik_kontrolu": {
+      "eslesti": false,
+      "durum": "incelenmeli",
+      "yontem": "baslik_benzerligi",
+      "puan": 100.0,
+      "gerekce": "En az bir DOI eksik. Başlık benzerliği 100.0/100; başlangıç eşiği 70/100."
+    },
+    "gerekce": "Hedef OpenAlex ID yayın listesiyle eşleşti. Atıf OpenAlex cites ilişkisinden alınmıştır; bağımsız kaynakça doğrulaması yapılmadı. Hedef başlık benzerliği: 100.0/100."
+  }
+]
