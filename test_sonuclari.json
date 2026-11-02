@@ -1,0 +1,177 @@
+[
+  {
+    "test": "Kontrollü: açılış",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Boş isim uyarısı",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Kayıtlı 18 yayın",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Seçim olmadan analiz uyarısı",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Tümü seçili / 2026 sonucu",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "CSV ve Excel indirme düğmeleri",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Yıl değişince eski sonuç silinir",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "2025 sonucu",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "2017 yıl filtresi",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "2019 yıl filtresi",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "2022 yıl filtresi",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "2023 yıl filtresi",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "2024 yıl filtresi",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "2025 yıl filtresi",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "2026 yıl filtresi",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "25 aday tüm yıllarda",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "19 elle doğrulandı / 6 incelenmeli",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Doğrulanmış 19 kaydın kanıt URLsi",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "İncelenmeli kanıt doğrulaması yapılmış gibi gösterilmez",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "2 öz atıf",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Aynı hedef-atıf çifti tekrarsız",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Excel 1 ortak kayıt",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Excel 3 ortak kayıt",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Excel 6 ortak kayıt",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Toplu seçim temizleme",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Yeni arama eski sonuçları kaldırır",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Canlı akış / sahte HTTP: kişi ve yayın yükleme",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Canlı akış / sahte HTTP: filtre ve kanıt",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "API hatası önceki sonucu temizler ve hata gösterir",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Son durumda yakalanmamış uygulama hatası yok",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Gerçek PDF yükleme ve metin çıkarma",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "PDF metni otomatik doğrulama diye sunulmaz",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Bozuk PDF hata mesajı",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Bilinmeyen başlığa yanlış kayıt eklenmez",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "test": "Başka yazarın DOI kaydı reddedilir",
+    "passed": true,
+    "detail": ""
+  }
+]

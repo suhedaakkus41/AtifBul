@@ -1,0 +1,6 @@
+{
+  "test": "Streamlit sunucusu /_stcore/health",
+  "passed": true,
+  "note": "Test ortamındaki developmentMode kapatılarak çalıştırıldı.",
+  "response": "ok"
+}

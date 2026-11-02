@@ -1,0 +1,4 @@
+{
+  "yayin_sayisi": 18,
+  "hata": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?filter=cites%3AW4401107803&per-page=100"
+}

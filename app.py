@@ -1,13 +1,22 @@
 import io
 import re
-import time
 
 import fitz  # PyMuPDF
 import pandas as pd
 import requests
 import streamlit as st
 
-from openalex_api import yayinlari_getir, atiflari_getir
+from openalex_api import yayinlari_getir as canli_yayinlari_getir, atiflari_getir as canli_atiflari_getir
+from kontrol_destegi import (demo_akademisyen, demo_yayinlar, demo_atiflar,
+                             demo_yayin_ara, sonuc_satiri)
+
+
+def yayinlari_getir(author_id):
+    return demo_yayinlar(author_id) if DEMO else canli_yayinlari_getir(author_id)
+
+
+def atiflari_getir(yayin_id):
+    return demo_atiflar(yayin_id) if DEMO else canli_atiflari_getir(yayin_id)
 
 
 # ==================================================
@@ -164,51 +173,44 @@ def kurum_uyuyor_mu(kurum, kurum_adlari):
     return any(a in metin for a in anahtarlar)
 
 
-def openalex_get(url, params=None, timeout=30, max_deneme=4):
-    """OpenAlex isteklerinde 429 ve geçici sunucu hatalarında kontrollü tekrar dener."""
-    son_yanit = None
-
-    for deneme in range(max_deneme):
-        yanit = requests.get(url, params=params, timeout=timeout)
-        son_yanit = yanit
-
-        if yanit.status_code not in (429, 500, 502, 503, 504):
-            yanit.raise_for_status()
-            return yanit
-
-        if deneme == max_deneme - 1:
-            yanit.raise_for_status()
-
-        bekleme = yanit.headers.get("Retry-After")
-        try:
-            bekleme_suresi = float(bekleme) if bekleme else min(2 ** (deneme + 1), 20)
-        except (ValueError, TypeError):
-            bekleme_suresi = min(2 ** (deneme + 1), 20)
-
-        time.sleep(bekleme_suresi)
-
-    if son_yanit is not None:
-        son_yanit.raise_for_status()
-    raise RuntimeError("OpenAlex isteği tamamlanamadı.")
+def ornek_yayin_getir(author_id):
+    """Tek istekle en çok atıf alan yayının başlığını getirir (hızlı)."""
+    try:
+        response = requests.get(
+            f"{OPENALEX_API}/works",
+            params={
+                "filter": f"author.id:{author_id}",
+                "sort": "cited_by_count:desc",
+                "per-page": 1,
+                "select": "title",
+            },
+            timeout=15,
+        )
+        response.raise_for_status()
+        sonuc = response.json().get("results", [])
+        return (sonuc[0].get("title") or "") if sonuc else ""
+    except Exception:
+        return ""
 
 
-@st.cache_data(ttl=3600, show_spinner=False)
 def akademisyen_ara(ad, kurum=None):
-    """Akademisyen aramasını bir saat önbellekte tutar; aday başına ek istek göndermez."""
-    response = openalex_get(
+
+    if DEMO:
+        return demo_akademisyen(ad)
+
+    response = requests.get(
         f"{OPENALEX_API}/authors",
         params={"search": ad, "per-page": 25},
         timeout=30,
     )
+    response.raise_for_status()
 
     sonuclar = []
 
     for kisi in response.json().get("results", []):
+
         kurumlar = kisi.get("last_known_institutions") or []
-        kurum_adlari = [
-            x.get("display_name", "")
-            for x in kurumlar
-        ]
+        kurum_adlari = [x.get("display_name", "") for x in kurumlar]
 
         if kurum and not kurum_uyuyor_mu(kurum, kurum_adlari):
             continue
@@ -221,29 +223,24 @@ def akademisyen_ara(ad, kurum=None):
             "sample_work": "",
         })
 
-    return sonuclar[:8]
+    # Örnek yayını sadece ilk 8 aday için getir (her aday için ayrı istek atılır)
+    sonuclar = sonuclar[:8]
+
+    for aday in sonuclar:
+        aday["sample_work"] = ornek_yayin_getir(aday["id"])
+
+    return sonuclar
 
 
-@st.cache_data(ttl=3600, show_spinner=False)
-def yayinlari_getir_onbellek(author_id):
-    """Akademisyenin yayın listesini bir saat önbellekte tutar."""
-    return yayinlari_getir(author_id)
-
-
-@st.cache_data(ttl=3600, show_spinner=False)
-def atiflari_getir_onbellek(yayin_id):
-    """Bir yayının atıf listesini bir saat önbellekte tutar."""
-    return atiflari_getir(yayin_id)
-
-
-@st.cache_data(ttl=3600, show_spinner=False)
 def yayin_ara(deger):
     """DOI ise doğrudan DOI ile, değilse başlıkla arar. Bulamazsa None döner."""
     deger = deger.strip()
+    if DEMO:
+        return demo_yayin_ara(deger)
     doi = re.search(r"10\.\d{4,9}/\S+", deger)
 
     if doi:
-        response = openalex_get(
+        response = requests.get(
             f"{OPENALEX_API}/works/https://doi.org/{doi.group(0)}",
             timeout=30,
         )
@@ -252,7 +249,7 @@ def yayin_ara(deger):
         response.raise_for_status()
         return response.json()
 
-    response = openalex_get(
+    response = requests.get(
         f"{OPENALEX_API}/works",
         params={"search": deger, "per-page": 1},
         timeout=30,
@@ -335,7 +332,7 @@ st.html("""
 
 st.html("""
 <div class="hero">
-    <div class="badge">Yapay zekâ destekli atıf tarama</div>
+    <div class="badge">OpenAlex ile atıf tarama prototipi</div>
     <h1>
         Bir akademisyenin aldığı atıfları<br>
         kanıtlarıyla birlikte bulun
@@ -350,6 +347,14 @@ st.html("""
 # ==================================================
 # ARAMA ALANI
 # ==================================================
+
+veri_modu = st.selectbox("Veri kaynağı", ["Kayıtlı demo · 18 yayın / 25 atıf adayı", "Canlı OpenAlex"])
+DEMO = veri_modu.startswith("Kayıtlı")
+if DEMO:
+    st.info("Kayıtlı demo: Kayıtlı Demo: Önceden hazırlanmış 18 yayın ve 25 atıf adayı kullanılır. Bu modda canlı API sorgusu yapılmaz..")
+else:
+    st.caption("Canlı OpenAlex: internet ve servis erişimi gerekir. Kayıt sayıları kayıtlı demodan farklı olabilir.")
+st.caption("Doğrulandı etiketi, 02.11.2026 tarihli elle kaynakça kontrolünden gelir. PDF yükleme henüz otomatik atıf doğrulamaz.")
 
 with st.container(border=True):
 
@@ -392,6 +397,16 @@ with st.container(border=True):
         )
 
 
+# Arama bağlamı değişince eski kişiye / kaynağa ait sonuçları temizle.
+arama_baglami = (akademisyen_adi.strip(), kurum, veri_modu)
+if st.session_state.get("arama_baglami") != arama_baglami:
+    for alan in ["authors", "results", "selected_author", "loaded_author_id", "works", "manual_works", "akademisyen_secimi"]:
+        st.session_state.pop(alan, None)
+    st.session_state.arama_baglami = arama_baglami
+if st.session_state.get("year") != int(atif_yili):
+    st.session_state.results = None
+st.session_state.year = int(atif_yili)
+
 if ara:
 
     if not akademisyen_adi.strip():
@@ -416,17 +431,8 @@ if ara:
             st.session_state.loaded_author_id = None
             st.session_state.manual_works = {}
 
-        except requests.exceptions.HTTPError as hata:
-            if getattr(hata.response, "status_code", None) == 429:
-                st.error(
-                    "OpenAlex şu anda çok fazla istek alıyor (429). "
-                    "Lütfen birkaç dakika sonra tekrar deneyin. "
-                    "Başarılı aramalar bir saat önbellekte tutulur."
-                )
-            else:
-                st.error(f"Akademisyen aranırken hata oluştu: {hata}")
-
         except Exception as hata:
+
             st.error(f"Akademisyen aranırken hata oluştu: {hata}")
 
 
@@ -467,6 +473,9 @@ if authors:
     )
 
     author = authors[secilen_index]
+    onceki = st.session_state.get("selected_author")
+    if onceki and onceki["id"] != author["id"]:
+        st.session_state.results = None
     st.session_state.selected_author = author
 
     st.info(
@@ -499,7 +508,7 @@ if author:
         if st.session_state.get("loaded_author_id") != author["id"]:
 
             with st.spinner("Yayınlar getiriliyor..."):
-                st.session_state.works = yayinlari_getir_onbellek(author["id"])
+                st.session_state.works = yayinlari_getir(author["id"])
 
             st.session_state.loaded_author_id = author["id"]
 
@@ -577,8 +586,16 @@ if author:
                             st.warning("Yayın bulunamadı.")
                         else:
                             yeni_id = kisa_id(bulunan.get("id", ""))
-
-                            if yeni_id in idler:
+                            yazar_idleri = {
+                                kisa_id(a.get("author", {}).get("id", ""))
+                                for a in bulunan.get("authorships", [])
+                            }
+                            from kontrol_destegi import normalize
+                            baslik_tam = normalize(ekle_degeri) == normalize(bulunan.get("title") or bulunan.get("display_name", ""))
+                            doi_arandi = bool(re.search(r"10\.\d{4,9}/\S+", ekle_degeri))
+                            if author["id"] not in yazar_idleri or (not doi_arandi and not baslik_tam):
+                                st.warning("Yazar kimliği veya tam başlık doğrulanamadı. Yanlış yayını eklememek için DOI ile deneyin.")
+                            elif yeni_id in idler:
                                 st.info("Bu yayın zaten listede.")
                             else:
                                 eklenenler.append({
@@ -610,11 +627,14 @@ if author:
                 }
 
                 tum_sonuclar = []
+                gorulen_ciftler = set()
+                st.session_state.results = None
 
                 try:
                     with st.spinner("Atıflar analiz ediliyor..."):
+                        st.write("Seçilen atıf yılı:", st.session_state.year)
                         for yayin_id in secili:
-                            bulunanlar = atiflari_getir_onbellek(yayin_id)
+                            bulunanlar = atiflari_getir(yayin_id)
 
                             for kayit in bulunanlar:
                                 # Atıf yapan eserin yayın yılını farklı olası alanlardan al.
@@ -631,15 +651,11 @@ if author:
                                 if kayit_yili != int(st.session_state.year):
                                     continue
 
-                                tum_sonuclar.append({
-                                    "Atıf yapan eser": kayit.get("atif_yapan_eser", ""),
-                                    "Yıl": kayit_yili,
-                                    "DOI": kayit.get("doi") or kayit.get("atif_yapan_doi") or "DOI bulunmuyor",
-                                    "Atıf yapan eser ID": kayit.get("openalex_id") or kayit.get("atif_yapan_eser_id", ""),
-                                    "Atıf alan yayın ID": yayin_id,
-                                    "Durum": "İncelenmeli",
-                                    "Bağımsız doğrulama": "Henüz yapılmadı"
-                                })
+                                satir = sonuc_satiri(kayit, yayin_id, baslik_haritasi.get(yayin_id, ""))
+                                cift = (satir["Atıf alan yayın ID"], satir["Atıf yapan eser ID"] or satir["DOI"] or satir["Atıf yapan eser"])
+                                if cift not in gorulen_ciftler:
+                                    gorulen_ciftler.add(cift)
+                                    tum_sonuclar.append(satir)
 
                     st.session_state.results = pd.DataFrame(tum_sonuclar)
                     st.success(
@@ -674,11 +690,14 @@ if sonuc is not None:
             hide_index=True,
             column_config={
                 "Kanıt": st.column_config.LinkColumn(
-                    "Kanıt", display_text="Kaynağı aç"
-                )
+                    "Kanıt", display_text="Kanıtı aç"
+                ),
+                "Yayın bağlantısı": st.column_config.LinkColumn("Yayın bağlantısı", display_text="Yayını aç")
             }
         )
 
+        dogrulanan = int((sonuc["Durum"] == "Doğrulandı").sum())
+        st.caption(f"Gösterilen {len(sonuc)} atıf ilişkisinden {dogrulanan} tanesi elle doğrulanmış; {len(sonuc) - dogrulanan} tanesi incelenmeli. Aynı eser farklı hedef yayınlara atıf yapıyorsa ayrı ilişkiler sayılır.")
         col1, col2 = st.columns(2)
 
         with col1:
@@ -724,7 +743,7 @@ if sonuc is not None:
 st.markdown("---")
 
 st.markdown(
-    '<div class="section-title">PDF yükle ve kaynakçayı doğrula</div>',
+    '<div class="section-title">PDF yükle ve metni çıkar</div>',
     unsafe_allow_html=True
 )
 
