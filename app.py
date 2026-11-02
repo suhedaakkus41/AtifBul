@@ -1,5 +1,6 @@
 import io
 import re
+import time
 
 import fitz  # PyMuPDF
 import pandas as pd
@@ -163,41 +164,51 @@ def kurum_uyuyor_mu(kurum, kurum_adlari):
     return any(a in metin for a in anahtarlar)
 
 
-def ornek_yayin_getir(author_id):
-    """Tek istekle en çok atıf alan yayının başlığını getirir (hızlı)."""
-    try:
-        response = requests.get(
-            f"{OPENALEX_API}/works",
-            params={
-                "filter": f"author.id:{author_id}",
-                "sort": "cited_by_count:desc",
-                "per-page": 1,
-                "select": "title",
-            },
-            timeout=15,
-        )
-        response.raise_for_status()
-        sonuc = response.json().get("results", [])
-        return (sonuc[0].get("title") or "") if sonuc else ""
-    except Exception:
-        return ""
+def openalex_get(url, params=None, timeout=30, max_deneme=4):
+    """OpenAlex isteklerinde 429 ve geçici sunucu hatalarında kontrollü tekrar dener."""
+    son_yanit = None
+
+    for deneme in range(max_deneme):
+        yanit = requests.get(url, params=params, timeout=timeout)
+        son_yanit = yanit
+
+        if yanit.status_code not in (429, 500, 502, 503, 504):
+            yanit.raise_for_status()
+            return yanit
+
+        if deneme == max_deneme - 1:
+            yanit.raise_for_status()
+
+        bekleme = yanit.headers.get("Retry-After")
+        try:
+            bekleme_suresi = float(bekleme) if bekleme else min(2 ** (deneme + 1), 20)
+        except (ValueError, TypeError):
+            bekleme_suresi = min(2 ** (deneme + 1), 20)
+
+        time.sleep(bekleme_suresi)
+
+    if son_yanit is not None:
+        son_yanit.raise_for_status()
+    raise RuntimeError("OpenAlex isteği tamamlanamadı.")
 
 
+@st.cache_data(ttl=3600, show_spinner=False)
 def akademisyen_ara(ad, kurum=None):
-
-    response = requests.get(
+    """Akademisyen aramasını bir saat önbellekte tutar; aday başına ek istek göndermez."""
+    response = openalex_get(
         f"{OPENALEX_API}/authors",
         params={"search": ad, "per-page": 25},
         timeout=30,
     )
-    response.raise_for_status()
 
     sonuclar = []
 
     for kisi in response.json().get("results", []):
-
         kurumlar = kisi.get("last_known_institutions") or []
-        kurum_adlari = [x.get("display_name", "") for x in kurumlar]
+        kurum_adlari = [
+            x.get("display_name", "")
+            for x in kurumlar
+        ]
 
         if kurum and not kurum_uyuyor_mu(kurum, kurum_adlari):
             continue
@@ -210,22 +221,29 @@ def akademisyen_ara(ad, kurum=None):
             "sample_work": "",
         })
 
-    # Örnek yayını sadece ilk 8 aday için getir (her aday için ayrı istek atılır)
-    sonuclar = sonuclar[:8]
-
-    for aday in sonuclar:
-        aday["sample_work"] = ornek_yayin_getir(aday["id"])
-
-    return sonuclar
+    return sonuclar[:8]
 
 
+@st.cache_data(ttl=3600, show_spinner=False)
+def yayinlari_getir_onbellek(author_id):
+    """Akademisyenin yayın listesini bir saat önbellekte tutar."""
+    return yayinlari_getir(author_id)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def atiflari_getir_onbellek(yayin_id):
+    """Bir yayının atıf listesini bir saat önbellekte tutar."""
+    return atiflari_getir(yayin_id)
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
 def yayin_ara(deger):
     """DOI ise doğrudan DOI ile, değilse başlıkla arar. Bulamazsa None döner."""
     deger = deger.strip()
     doi = re.search(r"10\.\d{4,9}/\S+", deger)
 
     if doi:
-        response = requests.get(
+        response = openalex_get(
             f"{OPENALEX_API}/works/https://doi.org/{doi.group(0)}",
             timeout=30,
         )
@@ -234,7 +252,7 @@ def yayin_ara(deger):
         response.raise_for_status()
         return response.json()
 
-    response = requests.get(
+    response = openalex_get(
         f"{OPENALEX_API}/works",
         params={"search": deger, "per-page": 1},
         timeout=30,
@@ -398,8 +416,17 @@ if ara:
             st.session_state.loaded_author_id = None
             st.session_state.manual_works = {}
 
-        except Exception as hata:
+        except requests.exceptions.HTTPError as hata:
+            if getattr(hata.response, "status_code", None) == 429:
+                st.error(
+                    "OpenAlex şu anda çok fazla istek alıyor (429). "
+                    "Lütfen birkaç dakika sonra tekrar deneyin. "
+                    "Başarılı aramalar bir saat önbellekte tutulur."
+                )
+            else:
+                st.error(f"Akademisyen aranırken hata oluştu: {hata}")
 
+        except Exception as hata:
             st.error(f"Akademisyen aranırken hata oluştu: {hata}")
 
 
@@ -472,7 +499,7 @@ if author:
         if st.session_state.get("loaded_author_id") != author["id"]:
 
             with st.spinner("Yayınlar getiriliyor..."):
-                st.session_state.works = yayinlari_getir(author["id"])
+                st.session_state.works = yayinlari_getir_onbellek(author["id"])
 
             st.session_state.loaded_author_id = author["id"]
 
@@ -586,9 +613,8 @@ if author:
 
                 try:
                     with st.spinner("Atıflar analiz ediliyor..."):
-                        st.write("Seçilen atıf yılı:", st.session_state.year)
                         for yayin_id in secili:
-                            bulunanlar = atiflari_getir(yayin_id)
+                            bulunanlar = atiflari_getir_onbellek(yayin_id)
 
                             for kayit in bulunanlar:
                                 # Atıf yapan eserin yayın yılını farklı olası alanlardan al.
